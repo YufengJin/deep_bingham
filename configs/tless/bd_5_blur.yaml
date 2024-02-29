@@ -17,7 +17,7 @@ train:
   loss_parameters:
     lookup_table_file: "precomputed/lookup_-500_0_40.dill"
     orthogonalization: "gram_schmidt"
-  device: "cuda:1"
+  device: "cuda:0"
   num_outputs: 19
   num_epochs: 5
   num_channels: 3

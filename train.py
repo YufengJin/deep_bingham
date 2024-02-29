@@ -102,6 +102,7 @@ def main():
     model_name = config["train"]["model"] or 'vgg11'
     num_classes = config["train"].get("num_outputs", None)
 
+    print("//////////////////// downloading model")
     model = modules.network.get_model(name=model_name,
                                       pretrained=True,
                                       num_channels=num_channels,
